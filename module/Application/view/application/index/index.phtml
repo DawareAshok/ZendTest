@@ -1,0 +1,17 @@
+<h1>Profile List</h1>
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Profile</th>
+        <th>Description</th>
+    </tr>
+    <?php foreach ($this->profiles as $profile) : ?>
+        <tr>
+            <td><?php echo $profile->getId(); ?></td>
+            <td><?php echo $profile->getProfileName(); ?></td>
+            <td><?php echo $profile->getDescription(); ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+
